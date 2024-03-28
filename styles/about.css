@@ -1,0 +1,350 @@
+:root {
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+
+    --primaryBackgroundColor: #ffff;
+    --secondaryBackgroundColor: #f0f0f0;
+    --thirdBackgroundColor: #2d2926;
+
+    --primaryOutlineNumber: #14a2c6;
+
+    --primaryIconColor: #f54d64; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: var(--primaryTextColor);
+    font-size: 5rem;
+}
+
+h2 {
+    color: var(--primaryTextColor);
+    font-size: 3rem;
+}
+
+p {
+    color: var(--primaryTextColor);
+    font-size: 1.1rem;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--primaryTextColor);
+}
+
+/* BAKAL NAVBAR OVERLAY */
+.full-nav {
+    position: fixed;
+    top: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: all 0.6s ease;
+    z-index: 20;
+}
+
+.close {
+    margin: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+.close svg {
+    height: 50px;
+    width: 50px;
+    fill: var(--primaryBackgroundColor);
+}
+
+.tulisan-menu {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    transition: all 1s ease;
+    color: var(--primaryBackgroundColor);
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.menu-nav {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    transition: all 1s ease;
+}
+
+.menu-nav li a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primaryBackgroundColor);
+    transition: all 0.3s ease;
+}
+
+.menu-nav li a svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu-nav li a:hover {
+    color: var(--primaryIconColor);
+    transform: scale(110%);
+}
+
+/* BAKAL NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.5rem 6rem;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    transition: 0.5s ease-in-out;
+}
+
+.scrolled {
+    background-color: var(--primaryBackgroundColor);
+    transition: 0.5 ease-in-out;
+    padding: 0.75rem 6rem;
+}
+
+.logo {
+    /* border: solid blue; */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: var(--primaryTextColor);
+    gap: 0.3rem;
+}
+
+.logo p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.logo svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: var(--primaryTextColor);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.menu p {
+    font-size: 1.3rem;
+}
+
+.menu svg {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--primaryTextColor);
+}
+
+/* BAKAL BANNER */
+#banner {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+#banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    
+}
+
+/* BAKAL WHAT WE DO */
+#what-we-do {
+    padding: 6rem 6rem;
+    display: flex;
+}
+
+.do-kiri {
+    width: 100%;
+}
+
+.do-kiri h1 {
+    line-height: 5rem;
+    /* border: 1px solid blue; */
+}
+
+.do-kanan p {
+    text-align: justify;
+}
+
+/* BAKAL EXPLAIN WHAT WE DO */
+#explain-do {
+    display: flex;
+    padding-bottom: 6rem;
+}
+
+#explain-do span {
+    font-size: 4rem;
+    font-weight: 1000;
+    -webkit-text-stroke: 1px var(--primaryOutlineNumber);
+    color: transparent;
+    padding-left: 6rem;
+}
+
+.explain-kiri {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 6rem;
+}
+
+.explain-kiri h2 {
+    line-height: 3rem;
+    padding-top: 5rem;
+}
+
+.explain-kiri p {
+    text-align: justify;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+.explain-kanan {
+    width: 60%;
+    /* border: 1px solid blue; */
+}
+
+.explain-kanan img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+/* BAKAL FOOTER */
+.footer-atas {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--thirdBackgroundColor);
+    padding: 3rem 0;
+}
+
+.footer-logo {
+    color: var(--primaryBackgroundColor);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-logo svg {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-nav {
+    color: var(--primaryBackgroundColor);
+    line-height: 1.8rem;
+}
+
+.footer-nav h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer-nav ul li a {
+    color: var(--secondaryTextColor);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer-nav ul li a:hover {
+    color: var(--secondaryBackgroundColor);
+}
+
+.footer-contact {
+    color: var(--primaryBackgroundColor);
+    line-height: 1.8rem;
+}
+
+.footer-contact h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer-contact p {
+    color: var(--secondaryTextColor);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer-contact p:hover {
+    color: var(--secondaryBackgroundColor);
+}
+
+.footer-follow {
+    color: var(--primaryBackgroundColor);
+}
+
+.footer-follow h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.background-follow {
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.background-follow a {
+    background-color: var(--secondaryBackgroundColor);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-follow a:hover{
+    background-color: var(--primaryIconColor);
+    fill: var(--primaryBackgroundColor);
+    transition: 0.2s ease-in-out;
+}
+
+.background-follow svg {
+    fill: inherit;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bawah {
+    background-color: var(--thirdBackgroundColor);
+    border-top: 1px solid var(--secondaryTextColor);
+}
+
+.footer-bawah p {
+    color: var(--primaryBackgroundColor);
+    padding: 1rem 5.5rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}

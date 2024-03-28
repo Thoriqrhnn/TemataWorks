@@ -1,0 +1,191 @@
+@media screen and (max-width: 1000px) {
+    /* img {
+        width: 100%;
+    } */
+
+    /* BAGIAN NAVBAR OVERLAY */
+    .tulisan-menu {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .menu-nav li a {
+        padding: 0.7rem;
+        font-size: 2rem;
+    }  
+    
+    .menu-nav li a svg {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+    /* BAGIAN NAVBAR */
+    .navbar {
+        padding: 2rem 3rem;
+    }
+
+    .scrolled {
+        background-color: var(--thirdBackgroundColor);
+        transition: 0.5 ease-in-out;
+        padding: 1rem 1.5rem;
+    }
+    
+    .logo p {
+        font-size: 1rem;
+    }
+
+    .logo svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .menu p {
+        font-size: 1rem;
+    }
+
+    .menu svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* BAGIAN BANNER VIDEO */
+    .banner h1 {
+        font-size: 3rem;
+        top: 70%;
+        left: -5%;
+    }
+
+    .banner h2 {
+        font-size: 3rem;
+        top: 78%;
+        left: 4%;
+    }
+
+    .banner p {
+        font-size: 1rem;
+        top: 90%;
+        left: -5%;
+    }
+
+    /* BAGIAN ABOUT */
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .about-kiri {
+        width: 100%;
+    }
+
+    .about-kiri h1 {
+        font-size: 3rem;
+        word-spacing: 6.5rem;
+        line-height: 2rem;
+    }
+
+    .about-kanan {
+        width: 90%;
+    }
+
+    .about-kanan img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* BAGIAN OUR SHOWCASE */
+    .intro-porto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .intro-porto h1 {
+        font-size: 3rem;
+        word-spacing: 3rem;
+        line-height: 2rem;
+    }
+
+    .isi-showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+
+    .isi-showcase img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .isi-showcase .explain {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    
+    .isi-showcase .explain h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
+    
+    .isi-showcase .explain h3 {
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    
+    .isi-showcase .explain p {
+        padding-bottom: 1.5rem;
+    }
+
+    /* BAGIAN CONTACT US */
+    .intro-contact {
+        padding: 3rem 1.5rem;
+    }
+
+    .getin-touch {
+        padding: 3rem 1.5rem;
+    }
+
+    .getin-touch h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+        /* border: 1px solid blue; */
+    }
+
+    .getin-touch span {
+        padding-left: 3.5rem;
+    }
+
+    .getin-touch a {
+        /* border: 1px solid blue; */
+    }
+
+    /* BAGIAN FOOTER */
+    .footer-atas {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .footer-bawah {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+}

@@ -1,0 +1,593 @@
+:root {
+  --primaryTextColor: #232e35;
+  --secondaryTextColor: #656d72;
+  --thirdTextColor: #ffff;
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9;
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #2d2926;
+
+  --primaryIconColor: #14a2c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li, a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+h1 {
+  font-weight: 650;
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* .main-container {
+  width: 1200px;
+  margin: 0 auto;
+} */
+
+/* @media screen and (max-width: 1200px) {
+  .main-container {
+      width: 90%;
+  }
+} */
+
+/* NYOBAIN NAVBARRR */
+.full-nav {
+  position: fixed;
+  top: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: all 0.6s ease;
+  z-index: 20;
+}
+
+.close {
+  margin: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+.close svg {
+  height: 50px;
+  width: 50px;
+  fill: var(--thirdTextColor);
+}
+
+.tulisan-menu {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  transition: all 1s ease;
+  color: var(--thirdTextColor);
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.menu-nav {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+  list-style: none;
+  transition: all 1s ease;
+}
+
+.menu-nav li a {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--thirdTextColor);
+  transition: all 0.3s ease;
+}
+
+.menu-nav li a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.menu-nav li a:hover {
+  color: var(--primaryIconColor);
+  transform: scale(110%);
+}
+
+/* Bakal Header */
+.header {
+  /* position: sticky; */
+  /* top: 0; */
+  /* background-color: transparent; */
+  /* padding: 1rem 2rem; */
+  /* z-index: 99; */
+  /* border: solid blue; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 3rem 5.5rem;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  /* border: solid blue; */
+  width: 100vw;
+  transition: 0.5s ease-in-out;
+}
+
+.scrolled {
+  background-color: var(--thirdBackgroundColor);
+  transition: 0.5 ease-in-out;
+  padding: 1.3rem 5.5rem;
+}
+
+.logo {
+  /* border: solid blue; */
+}
+
+.logo a {
+  display: flex;
+  color: var(--thirdTextColor);
+  gap: 0.3rem;
+}
+
+.logo p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.logo svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: white;
+}
+
+.menu {
+  /* border: solid blue; */
+  display: flex;
+  color: white;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.menu p {
+  font-size: 1.3rem;
+}
+
+.menu svg {
+  height: 2rem;
+  width: 2rem;
+  fill: white;
+}
+
+/* Bakal Video Overlay */
+.banner {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-clip {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+}
+
+.banner h1 {
+  height: fit-content;
+  position: absolute;
+  color: white;
+  /* border: 1px solid blue; */
+  top: 30%;
+  font-weight: 700;
+  font-size: 6rem;
+  padding-left: 5.5rem;
+}
+
+.banner h2 {
+  position: absolute;
+  height: fit-content;
+  color: white;
+  /* border: 1px solid blue; */
+  top: 45%;
+  left: 10%;
+  font-weight: 700;
+  font-size: 6rem;
+  padding-left: 5.5rem;
+}
+
+.banner p {
+  position: absolute;
+  height: fit-content;
+  color: white;
+  /* border: 1px solid blue; */
+  top: 70%;
+  left: 10%;
+  font-size: 1.2rem;
+  padding-left: 5.5rem;
+}
+
+/* Bakal About Us */
+
+.about-us {
+  /* border: 1px solid blue; */
+  padding: 5rem 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primaryBackgroundColor);
+  gap: 7rem;
+}
+
+.about-kiri {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about-kiri h1 {
+  /* border: 1px solid blue; */
+  line-height: 3.5rem;
+  word-spacing: 10rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-kiri p {
+  /* border: 1px solid blue; */
+  font-size: 1.1rem;
+  text-align: justify;
+  /* padding-right: 2rem; */
+}
+
+.about-kanan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--thirdBackgroundColor);
+  width: 50%;
+}
+
+.about-kanan img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  transition: 0.3s ease-in-out;
+}
+
+.about-kanan img:hover {
+  transform: scale(110%);
+}
+
+.poto1 {
+  /* padding: 2rem 2rem 1rem 2rem; */
+  /* border: 1px solid blue; */
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+
+.poto2 {
+  /* padding: 1rem 2rem 2rem 2rem; */
+  /* border: 1px solid blue; */
+  padding: 1.5rem 3rem 3rem 3rem;
+}
+
+.about-kiri a {
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.about-kiri a:hover {
+  color: var(--primaryIconColor);
+  transition: 0.2s ease-in-out;
+}
+
+.about-kiri a svg {
+  width: 4rem;
+  height: 4rem;
+  /* border: 1px solid blue; */
+  fill: var(--primaryIconColor);
+}
+
+/* Bakal Porto */
+.intro-porto {
+  padding: 5rem 5.5rem;
+  display: flex;
+  background-color: var(--secondaryBackgroundColor);
+  gap: 8rem;
+}
+
+.intro-porto h1 {
+  /* border: 1px solid blue; */
+  line-height: 3.5rem;
+  word-spacing: 4.5rem;
+}
+
+.intro-porto p {
+  /* border: 1px solid blue; */
+  font-size: 1.1rem;
+  text-align: justify;
+  display: flex;
+  align-items: end;
+}
+
+/* Bakal Isi Showcase */
+.isi-showcase {
+  display: flex;
+  padding: 5rem 3rem;
+  align-items: center;
+  background-color: var(--secondaryBackgroundColor);
+}
+
+.isi-showcase img {
+  width: 70%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.isi-showcase .explain {
+  width: 30%;
+  background-color: var(--thirdBackgroundColor);
+  padding: 2rem 3rem;
+}
+
+.isi-showcase .explain h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: var(--thirdTextColor);
+}
+
+.isi-showcase .explain h3 {
+  font-weight: 800;
+  color: var(--primaryIconColor);
+}
+
+.isi-showcase .explain p {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--thirdTextColor);
+}
+
+.isi-showcase .explain a {
+  font-size: 1.1rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 700;
+  color: var(--thirdTextColor);
+  width: fit-content;
+}
+
+.isi-showcase .explain a:hover {
+  color: var(--primaryIconColor);
+  transition: 0.2s ease-in-out;
+}
+
+.isi-showcase .explain svg {
+  width: 4rem;
+  height: 4rem;
+  /* border: 1px solid blue; */
+  fill: var(--primaryIconColor);
+}
+
+.more-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: var(--secondaryBackgroundColor);
+}
+
+.more-projects a {
+  font-size: 1.6rem;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.more-projects a:hover {
+  color: var(--primaryIconColor);
+  transition: 0.2s ease-in-out;
+}
+
+.more-projects svg {
+  height: 4rem;
+  width: 4rem;
+  fill: var(--primaryIconColor);
+}
+
+/* Bakal Get in Touch */
+#contact-us {
+  background-color: var(--primaryBackgroundColor);
+}
+
+.intro-contact {
+  padding: 5rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-contact h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.intro-contact p {
+  text-align: justify;
+  line-height: 1.7rem;
+  color: var(--secondaryTextColor);
+  padding-bottom: 0.4rem;
+}
+
+.getin-touch {
+  padding: 5rem 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.getin-touch h1 {
+  line-height: 4rem;
+  /* border: 1px solid blue; */
+}
+
+.getin-touch span {
+  /* border: 1px solid blue; */
+  padding-left: 5.5rem;
+}
+
+.getin-touch a {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 650;
+  gap: 1rem;
+}
+
+.getin-touch a:hover {
+  color: var(--primaryIconColor);
+  transition: 0.2s ease-in-out;
+}
+
+.getin-touch svg {
+  width: 4rem;
+  height: 4rem;
+  fill: var(--primaryIconColor);
+}
+
+/* Bakal Footer */
+.footer-atas {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--thirdBackgroundColor);
+  padding: 3rem 0;
+}
+
+.footer-logo {
+  color: var(--thirdTextColor);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-logo svg {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-nav {
+  color: var(--thirdTextColor);
+  line-height: 1.8rem;
+}
+
+.footer-nav h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer-nav ul li a {
+  color: var(--secondaryTextColor);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--thirdTextColor);
+}
+
+.footer-contact {
+  color: var(--thirdTextColor);
+  line-height: 1.8rem;
+}
+
+.footer-contact h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer-contact p {
+  color: var(--secondaryTextColor);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footer-contact p:hover {
+  color: var(--thirdTextColor);
+}
+
+.footer-follow {
+  color: var(--thirdTextColor);
+}
+
+.footer-follow h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.background-follow {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.background-follow a {
+  background-color: var(--secondaryBackgroundColor);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-follow a:hover{
+  background-color: var(--primaryIconColor);
+  fill: var(--thirdTextColor);
+  transition: 0.2s ease-in-out;
+}
+
+.background-follow svg {
+  fill: inherit;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bawah {
+  background-color: var(--thirdBackgroundColor);
+  border-top: 1px solid var(--secondaryTextColor);
+}
+
+.footer-bawah p {
+  color: var(--thirdTextColor);
+  padding: 1rem 5.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
